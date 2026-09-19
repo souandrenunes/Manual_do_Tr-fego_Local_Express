@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Tráfego Local Express</title>
+    
+    <!-- FAVICON (Ícone da aba do navegador) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z' fill='%23DC2626'/><path d='M13 6l-4 5h3v4l4-5h-3z' fill='%23FFFFFF'/></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        
+        /* Botão Verde de Alta Conversão */
+        .btn-green {
+            background: linear-gradient(135deg, #25D366 0%, #1EBE5C 100%);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-green:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        /* Efeito de pulso sutil no botão principal */
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+        .animate-pulse-soft {
+            animation: pulse-soft 3s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-red-500 selection:text-white">
+
+    <!-- 1. HERO SECTION (Topo Direto ao Ponto com Logo) -->
+    <header class="bg-slate-900 text-white py-12 md:py-20 px-4 border-b-4 border-red-600 relative overflow-hidden">
+        <!-- Padrão de fundo sutil -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            
+            <!-- LOGO MANUAL DO TRÁFEGO LOCAL EXPRESS -->
+            <div class="flex items-center justify-center gap-3 mb-10">
+                <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center shadow-lg shadow-red-600/30 transform -rotate-3">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                        <path d="M13 6l-4 5h3v4l4-5h-3z" fill="#DC2626"></path>
+                    </svg>
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="text-xl md:text-2xl font-black text-white leading-none tracking-tight">MANUAL DO TRÁFEGO</span>
+                    <span class="text-sm md:text-base font-bold text-red-500 tracking-widest leading-none mt-1">LOCAL EXPRESS</span>
+                </div>
+            </div>
+
+            <span class="inline-block py-1 px-4 rounded-full bg-red-600/20 text-red-500 font-bold text-xs tracking-widest uppercase mb-6 border border-red-500/30">
+                Atenção Donos de Negócios Locais
+            </span>
+            
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                Pare de depender da sorte e das <span class="text-red-500">indicações.</span>
+            </h1>
+            
+            <p class="text-lg md:text-2xl text-gray-300 font-medium mb-12 max-w-3xl mx-auto leading-relaxed">
+                Conquiste o controle do seu crescimento e atraia novos clientes todos os dias com o <strong class="text-white">Manual do Tráfego Local Express</strong>.
+            </p>
+            
+            <a href="#oferta" class="btn-green animate-pulse-soft inline-block w-full md:w-auto px-10 py-5 text-white font-black text-xl md:text-2xl rounded-xl uppercase tracking-wide">
+                GARANTA SUA AUTONOMIA AGORA
+            </a>
+            
+            <div class="mt-6 flex items-center justify-center gap-2 text-sm text-gray-400">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                Acesso imediato e seguro
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. IDENTIFICAÇÃO DA DOR E EMPATIA -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto text-lg md:text-xl text-gray-700 leading-relaxed space-y-6">
+            <p>Você abre o seu negócio e fica esperando o telefone tocar ou alguém entrar pela porta. Os clientes que chegam são quase sempre por indicação. Isso é bom, mas <strong class="text-red-600">não traz previsibilidade</strong>.</p>
+            
+            <p>Você não tem controle de quantos clientes novos terá no mês, não consegue escalar e acaba aceitando cobrar menos do que o seu serviço realmente vale porque não tem um fluxo constante de novos interessados.</p>
+            
+            <div class="bg-slate-50 border-l-4 border-red-500 p-6 my-8 rounded-r-lg">
+                <p class="font-bold text-2xl text-slate-900 italic">"Eu sei como é ver a sua agenda depender da sorte."</p>
+            </div>
+            
+            <p class="font-bold text-slate-900">Por isso, eu criei um sistema simplificado, sem termos difíceis e sem enrolação, para você dominar a arte de atrair clientes na sua região sem depender de agências.</p>
+        </div>
+    </section>
+
+    <!-- 3. O QUE VOCÊ VAI DOMINAR (MÓDULOS) -->
+    <section class="py-20 px-4 bg-slate-50 border-y border-gray-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-slate-900">Veja o que você vai aprender de forma prática, direto na tela:</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Módulo 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-slate-900 text-white font-bold text-sm px-4 py-1 rounded-bl-lg">Módulo 1</div>
+                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">O Ímã de Clientes Vizinhos</h3>
+                    <p class="text-gray-600 leading-relaxed">Descubra como configurar o seu Google Meu Negócio para aparecer no topo quando as pessoas da sua região procurarem pelo seu serviço.</p>
+                </div>
+                
+                <!-- Módulo 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-slate-900 text-white font-bold text-sm px-4 py-1 rounded-bl-lg">Módulo 2</div>
+                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Seu Site Gratuito que Vende</h3>
+                    <p class="text-gray-600 leading-relaxed">O passo a passo para criar um site profissional de graça usando as ferramentas do próprio Google, feito sob medida para converter visitantes em clientes.</p>
+                </div>
+
+                <!-- Módulo 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-slate-900 text-white font-bold text-sm px-4 py-1 rounded-bl-lg">Módulo 3</div>
+                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Suas Primeiras Campanhas no Ar</h3>
+                    <p class="text-gray-600 leading-relaxed">Aperte os botões certos e coloque seus primeiros anúncios para rodar no Google gastando menos de R$ 30 reais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BÔNUS EXCLUSIVO -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto bg-green-50 border-2 border-green-500 rounded-3xl p-8 md:p-12 shadow-md flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/4 text-center">
+                <span class="text-7xl">🎁</span>
+            </div>
+            <div class="md:w-3/4 text-center md:text-left">
+                <span class="bg-green-600 text-white px-3 py-1 text-xs font-bold uppercase rounded-full tracking-wide">Bônus Especial</span>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 mt-4 mb-3">Manual Simples de Atendimento no WhatsApp</h3>
+                <p class="text-gray-700 text-lg leading-relaxed">De nada adianta o cliente chegar se você não souber vender. Você vai levar de graça um guia prático para transformar as conversas de WhatsApp em vendas reais e negócios fechados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROVA SOCIAL -->
+    <section class="py-16 px-4 bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="text-4xl mb-4">🗣️</div>
+            <p class="text-xl md:text-3xl font-medium italic leading-relaxed mb-8">
+                "Depois do Manual, finalmente entendi o Google Meu Negócio e hoje recebo mensagens de clientes novos todos os dias. Mudou o jogo para mim!"
+            </p>
+            <div class="flex items-center justify-center gap-4">
+                <!-- Foto/Logotipo do cliente com fundo branco para destacar a imagem PNG -->
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-slate-700 p-1">
+                    <img src="logo.png" alt="Bom Pastor Vidros" class="w-full h-full object-contain">
+                </div>
+                <div class="text-left">
+                    <p class="font-bold text-lg">Bom Pastor Vidros</p>
+                    <p class="text-sm text-gray-400">Vidraçaria Local</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. OFERTA E PREÇO TRANSPARENTE -->
+    <section id="oferta" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto bg-white rounded-3xl p-8 md:p-12 text-center shadow-xl border border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Tudo isso para você parar de depender de indicações e ter o controle do seu negócio nas suas mãos.</h2>
+            
+            <p class="text-gray-500 font-semibold uppercase tracking-widest mt-8 mb-2">Por apenas:</p>
+            <div class="flex items-start justify-center text-slate-900 mb-2">
+                <span class="text-2xl font-bold mt-2">R$</span>
+                <span class="text-6xl md:text-8xl font-black tracking-tighter">47</span>
+                <span class="text-2xl font-bold mt-2">,90</span>
+            </div>
+            <p class="text-gray-600 font-medium mb-10">à vista ou em até 5x no cartão.</p>
+
+            <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn-green block w-full text-center px-6 py-6 text-white font-black text-xl md:text-2xl rounded-xl uppercase transition-all mb-4">
+                GARANTA SUA AUTONOMIA AGORA
+            </a>
+            
+            <!-- Selo de Segurança Simples e Limpo -->
+            <div class="flex items-center justify-center gap-2 mt-6 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                <span class="text-xs font-bold text-gray-600 uppercase tracking-wider">Compra Segura e Criptografada</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. GARANTIA -->
+    <section class="py-16 px-4 bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-8 justify-center">
+            <div class="text-6xl">🔒</div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-2 text-red-500">Satisfação Garantida ou seu dinheiro de volta</h3>
+                <p class="text-gray-300">Você tem 7 dias para testar todo o material. Se achar que não é para você, basta apertar um botão e devolvemos cada centavo. O risco é todo meu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ E CTA FINAL -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-black text-center text-slate-900 mb-12">Perguntas Frequentes</h2>
+            
+            <div class="space-y-6 mb-16">
+                <div class="bg-slate-50 border border-gray-200 rounded-xl p-6">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">Não sei nada de tecnologia, consigo fazer?</h4>
+                    <p class="text-gray-600">Sim! O passo a passo é totalmente guiado, clique a clique, pensado para quem nunca fez um anúncio na vida.</p>
+                </div>
+                
+                <div class="bg-slate-50 border border-gray-200 rounded-xl p-6">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">Preciso de muito tempo para aplicar?</h4>
+                    <p class="text-gray-600">Não. As aulas são rápidas e direto ao ponto, feitas para se encaixarem na rotina corrida de quem é dono do próprio negócio.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#oferta" class="btn-green inline-block w-full md:w-auto px-10 py-5 text-white font-black text-xl md:text-2xl rounded-xl uppercase transition-all shadow-lg">
+                    GARANTA SUA AUTONOMIA AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="py-8 text-center text-sm text-gray-500 bg-slate-100 px-4 border-t border-gray-200">
+        <p>&copy; 2026 Manual do Tráfego Local Express. Todos os direitos reservados.</p>
+        <p class="mt-2 text-xs opacity-60">Este site não é afiliado ao Facebook, Google ou a qualquer de suas entidades.</p>
+    </footer>
+
+</body>
+</html>
